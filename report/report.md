@@ -383,7 +383,7 @@ Fourth, an ablation isolates length: the response-only CNN was retrained
 with all responses truncated to the first 128 tokens (the median response
 is ~780 tokens and 94% of responses exceed 128 tokens, so the length
 signal is destroyed for nearly every sample). Accuracy falls
-from 0.833 to 0.792 (−4.1 points), which is real but far from fatal. The model
+from 0.833 to 0.792 (−4.1 points). The model
 keeps 95% of its accuracy, meaning the fingerprint lives mostly in *what
 the text looks like* in the first ~800 words (vocabulary, formatting
 choices, sentence rhythm), with length as an additional but secondary
@@ -404,8 +404,7 @@ formatting stripped and lengths equalized.
   project was checking whether the same prompt appeared in train and test.
   Arena users resubmit the same questions constantly, and one battle
   produces two samples with identical prompts; a random split would have
-  inflated every RQ2 number. Grouping by prompt hash and *verifying* the
-  disjointness changed the setup from "probably fine" to "provably clean".
+  inflated every RQ2 number.
 - **Negative results are results.** "The prompt does not identify the
   model" (16.5-18.2% vs 16.7% chance across three model families) is only
   credible because the same pipeline achieves 83% from the response;
