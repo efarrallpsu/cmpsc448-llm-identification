@@ -1,0 +1,25 @@
+venv/
+__pycache__/
+*.pyc
+data/raw/
+data/processed/samples_all.parquet
+data/processed/rq3/
+logs/
+logs_sweep.txt
+*.log
+results/*.pt
+results/preds_*.parquet
+results_backup_8ep/
+nohup.out
+
+# course materials / unrelated files
+HW1.ipynb
+HW1.odt
+HW1.pdf
+HW2.pdf
+Homework*.pdf
+Midterm project-1.pdf
+bustabit.csv
+
+# LibreOffice locks
+.~lock*

@@ -1,0 +1,69 @@
+{
+  "tag": "tfidf_output",
+  "input_type": "output",
+  "model_type": "tfidf+logreg",
+  "vocab_size": 50000,
+  "labels": [
+    "Claude",
+    "DeepSeek",
+    "GPT",
+    "Gemini",
+    "Llama",
+    "Qwen"
+  ],
+  "test": {
+    "accuracy": 0.8014814814814815,
+    "macro_f1": 0.8010917000792568,
+    "confusion_matrix": [
+      [
+        185,
+        19,
+        8,
+        2,
+        8,
+        3
+      ],
+      [
+        18,
+        155,
+        14,
+        2,
+        14,
+        22
+      ],
+      [
+        13,
+        18,
+        167,
+        7,
+        6,
+        14
+      ],
+      [
+        6,
+        3,
+        3,
+        205,
+        4,
+        4
+      ],
+      [
+        5,
+        9,
+        5,
+        6,
+        197,
+        3
+      ],
+      [
+        8,
+        20,
+        15,
+        0,
+        9,
+        173
+      ]
+    ],
+    "report": "              precision    recall  f1-score   support\n\n      Claude     0.7872    0.8222    0.8043       225\n    DeepSeek     0.6920    0.6889    0.6904       225\n         GPT     0.7877    0.7422    0.7643       225\n      Gemini     0.9234    0.9111    0.9172       225\n       Llama     0.8277    0.8756    0.8510       225\n        Qwen     0.7900    0.7689    0.7793       225\n\n    accuracy                         0.8015      1350\n   macro avg     0.8013    0.8015    0.8011      1350\nweighted avg     0.8013    0.8015    0.8011      1350\n"
+  }
+}

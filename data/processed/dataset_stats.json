@@ -1,0 +1,45 @@
+{
+  "n_samples": 9000,
+  "labels": [
+    "Claude",
+    "DeepSeek",
+    "GPT",
+    "Gemini",
+    "Llama",
+    "Qwen"
+  ],
+  "counts": {
+    "Claude": {
+      "test": 225,
+      "train": 1050,
+      "val": 225
+    },
+    "DeepSeek": {
+      "test": 225,
+      "train": 1050,
+      "val": 225
+    },
+    "GPT": {
+      "test": 225,
+      "train": 1050,
+      "val": 225
+    },
+    "Gemini": {
+      "test": 225,
+      "train": 1050,
+      "val": 225
+    },
+    "Llama": {
+      "test": 225,
+      "train": 1050,
+      "val": 225
+    },
+    "Qwen": {
+      "test": 225,
+      "train": 1050,
+      "val": 225
+    }
+  },
+  "median_response_chars": 2805.0,
+  "median_prompt_chars": 94.0
+}
