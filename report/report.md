@@ -222,8 +222,8 @@ Per-class test accuracy for the response-only models:
 | DeepSeek | 0.729 | 0.591 |
 
 Gemini is the easiest model for both architectures, and both models find
-DeepSeek hardest. For the CNN, DeepSeek's errors split between GPT (21) and
-Claude (20). The DeepSeek/GPT/Qwen middle group writes similarly formatted
+DeepSeek hardest. For the CNN, DeepSeek's errors split between GPT (21 cases) and
+Claude (20 cases). The DeepSeek/GPT/Qwen middle group writes similarly formatted
 answers (Section 4.2), and DeepSeek's replies also drift toward Claude-like
 terseness on some prompts. Errors are also uncertain: the mean predicted
 probability on misclassified samples is only 0.66, so the classifier rarely
@@ -425,7 +425,7 @@ formatting stripped and lengths equalized.
   touching the test set only once were small habits that made the
   comparisons trustworthy.
 - **Tooling.** Development was assisted by an AI coding agent (opencode);
-  all code, data decisions, and results were reviewed, run, and verified by me (Eric Farrall).
+  all code, data decisions, and results were reviewed, run, and verified by the me (Eric Farrall).
 
 ---
 
