@@ -415,15 +415,8 @@ formatting stripped and lengths equalized.
   document into one vector. The non-neural baselines (58% from six
   metadata columns) further showed that a large share of the signal is
   simple structure, not deep semantics.
-- **Respect the compute budget.** With no GPU, a single BiLSTM epoch on
-  300-token sequences costs ~15 minutes. Choosing sequence lengths,
-  model size, and the number of configurations *before* launching runs is
-  part of the experiment design, not an afterthought; we checkpointed each
-  run so a long sweep could resume after interruption.
-- **Measurement discipline.** Fixing the seed, keeping one protocol across
-  all six configurations, selecting models on validation macro-F1, and
-  touching the test set only once were small habits that made the
-  comparisons trustworthy.
+
+
 - **Tooling.** Development was assisted by an AI coding agent (opencode);
   all code, data decisions, and results were reviewed, run, and verified by me (Eric Farrall).
 
