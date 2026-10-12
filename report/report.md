@@ -425,7 +425,7 @@ formatting stripped and lengths equalized.
   touching the test set only once were small habits that made the
   comparisons trustworthy.
 - **Tooling.** Development was assisted by an AI coding agent (opencode);
-  all code, data decisions, and results were reviewed, run, and verified by the me (Eric Farrall).
+  all code, data decisions, and results were reviewed, run, and verified by me (Eric Farrall).
 
 ---
 
